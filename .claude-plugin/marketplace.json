@@ -1,0 +1,18 @@
+{
+  "name": "bizsidekick",
+  "owner": { "name": "Bustly", "url": "https://bustly.ai" },
+  "metadata": {
+    "description": "Bustly's official plugin marketplace",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "bizsidekick",
+      "source": "./plugins/bustly",
+      "description": "Operate connected commerce stores and advertising systems through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
+      "author": { "name": "Bustly" },
+      "homepage": "https://bustly.ai",
+      "category": "productivity"
+    }
+  ]
+}

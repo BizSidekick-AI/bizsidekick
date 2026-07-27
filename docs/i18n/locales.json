@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-07-22",
+  "scope": "Intersection of ChatGPT interface languages and Shopify admin languages",
+  "defaultLocale": "en",
+  "sources": {
+    "openai": "https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt%3F.class",
+    "shopify": "https://help.shopify.com/en/manual/your-account/languages"
+  },
+  "locales": [
+    { "code": "en", "name": "English", "nativeName": "English", "file": "../../README.md" },
+    { "code": "zh-CN", "name": "Chinese (Simplified)", "nativeName": "简体中文", "file": "README.zh-CN.md" },
+    { "code": "zh-TW", "name": "Chinese (Traditional)", "nativeName": "繁體中文", "file": "README.zh-TW.md" },
+    { "code": "cs", "name": "Czech", "nativeName": "Čeština", "file": "README.cs.md" },
+    { "code": "da", "name": "Danish", "nativeName": "Dansk", "file": "README.da.md" },
+    { "code": "nl", "name": "Dutch", "nativeName": "Nederlands", "file": "README.nl.md" },
+    { "code": "fi", "name": "Finnish", "nativeName": "Suomi", "file": "README.fi.md" },
+    { "code": "fr", "name": "French", "nativeName": "Français", "file": "README.fr.md" },
+    { "code": "de", "name": "German", "nativeName": "Deutsch", "file": "README.de.md" },
+    { "code": "it", "name": "Italian", "nativeName": "Italiano", "file": "README.it.md" },
+    { "code": "ja", "name": "Japanese", "nativeName": "日本語", "file": "README.ja.md" },
+    { "code": "ko", "name": "Korean", "nativeName": "한국어", "file": "README.ko.md" },
+    { "code": "nb", "name": "Norwegian (Bokmål)", "nativeName": "Norsk bokmål", "file": "README.nb.md" },
+    { "code": "pl", "name": "Polish", "nativeName": "Polski", "file": "README.pl.md" },
+    { "code": "pt-BR", "name": "Portuguese (Brazil)", "nativeName": "Português (Brasil)", "file": "README.pt-BR.md" },
+    { "code": "pt-PT", "name": "Portuguese (Portugal)", "nativeName": "Português (Portugal)", "file": "README.pt-PT.md" },
+    { "code": "es", "name": "Spanish", "nativeName": "Español", "file": "README.es.md" },
+    { "code": "sv", "name": "Swedish", "nativeName": "Svenska", "file": "README.sv.md" },
+    { "code": "th", "name": "Thai", "nativeName": "ไทย", "file": "README.th.md" },
+    { "code": "tr", "name": "Turkish", "nativeName": "Türkçe", "file": "README.tr.md" }
+  ]
+}

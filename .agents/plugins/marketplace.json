@@ -1,0 +1,20 @@
+{
+  "name": "bizsidekick",
+  "interface": {
+    "displayName": "BizSidekick"
+  },
+  "plugins": [
+    {
+      "name": "bizsidekick",
+      "source": {
+        "source": "local",
+        "path": "./plugins/bustly"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

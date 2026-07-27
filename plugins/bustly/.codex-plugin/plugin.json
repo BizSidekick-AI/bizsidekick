@@ -1,0 +1,45 @@
+{
+  "name": "bizsidekick",
+  "version": "0.0.1",
+  "description": "Operate connected commerce stores and advertising systems through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
+  "author": {
+    "name": "Bustly"
+  },
+  "homepage": "https://bustly.ai",
+  "keywords": [
+    "commerce",
+    "shopify",
+    "ecommerce",
+    "operations",
+    "bizsidekick",
+    "bustly"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "BizSidekick",
+    "shortDescription": "Operate connected stores safely with BizSidekick.",
+    "longDescription": "Read connected commerce, Klaviyo, advertising, GA4, and Search Console data; create governed draft Klaviyo Campaigns, send only to verified single-recipient test Segments, apply audited Shopify changes, and pause one exact Meta Campaign through persistent high-risk confirmation.",
+    "developerName": "Bustly",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Audit"
+    ],
+    "websiteURL": "https://bustly.ai",
+    "brandColor": "#000000",
+    "composerIcon": "./assets/bizsidekick-icon.svg",
+    "logo": "./assets/bizsidekick-icon.svg",
+    "defaultPrompt": [
+      "Connect BizSidekick and show every accessible store and its recent products.",
+      "Compare my GA4 traffic with Search Console clicks and explain the change.",
+      "Segment my Shopify customers by purchase frequency and customer value for each store.",
+      "Preview a 20% Shopify discount code for one exact store.",
+      "Create a draft Klaviyo Campaign and preview a safe single-recipient test send.",
+      "Preview pausing one exact Meta Campaign with high-risk confirmation.",
+      "Preview a safe update to a Shopify product.",
+      "Review the audit ledger for my last BizSidekick task."
+    ]
+  }
+}
