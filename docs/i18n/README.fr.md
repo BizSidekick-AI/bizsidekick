@@ -11,7 +11,7 @@ de fournisseur, aucune donnée marchande, aucun code source du service MCP et au
 Collez le texte suivant dans une tâche Codex pour ordinateur :
 
 ```text
-Utilise la marketplace native de plugins de Codex pour ajouter `BizSidekick-AI/bizsidekick` et installe BizSidekick uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Réutilise ma connexion existante. Si l'autorisation se termine sans configuration de compte, vérifie la connexion, puis crée et ouvre automatiquement une seule nouvelle tâche BizSidekick affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette tâche d'installation ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et crée la tâche.
+Utilise la marketplace personnalisée de plugins de Codex pour ajouter `BizSidekick-AI/bizsidekick` et installe BizSidekick uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Réutilise ma connexion existante. Si l'autorisation se termine sans configuration de compte, vérifie la connexion, puis crée et ouvre automatiquement une seule nouvelle tâche BizSidekick affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette tâche d'installation ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et crée la tâche.
 ```
 
 Solution de repli avec la CLI :
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Collez le texte suivant dans une session Claude Code :
 
 ```text
-Utilise la marketplace native de plugins de Claude Code pour ajouter `BizSidekick-AI/bizsidekick` et installe `bizsidekick@bizsidekick` uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Conserve ma connexion existante et exécute `/reload-plugins` une seule fois après une nouvelle installation. Si l'autorisation se termine sans configuration de compte, continue dans cette session et démarre automatiquement une tâche BizSidekick en lecture seule affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette session ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et démarre la tâche.
+Utilise la marketplace personnalisée de plugins de Claude Code pour ajouter `BizSidekick-AI/bizsidekick` et installe `bizsidekick@bizsidekick` uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Conserve ma connexion existante et exécute `/reload-plugins` une seule fois après une nouvelle installation. Si l'autorisation se termine sans configuration de compte, continue dans cette session et démarre automatiquement une tâche BizSidekick en lecture seule affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette session ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et démarre la tâche.
 ```
 
 Solution de repli avec la CLI :
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Collez le texte suivant dans une conversation WorkBuddy :
 
 ```text
-Utilise la marketplace native de plugins de WorkBuddy pour ajouter `BizSidekick-AI/bizsidekick` et installe `bizsidekick@bizsidekick` uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Conserve ma connexion existante et exécute `/reload-plugins` une seule fois après une nouvelle installation. Si l'autorisation se termine sans configuration de compte, continue dans cette conversation et démarre automatiquement une tâche BizSidekick en lecture seule affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette conversation ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et démarre la tâche.
+Utilise la marketplace personnalisée de plugins de WorkBuddy pour ajouter `BizSidekick-AI/bizsidekick` et installe `bizsidekick@bizsidekick` uniquement si nécessaire. N'ouvre pas et ne lis pas le dépôt dans un navigateur. Conserve ma connexion existante et exécute `/reload-plugins` une seule fois après une nouvelle installation. Si l'autorisation se termine sans configuration de compte, continue dans cette conversation et démarre automatiquement une tâche BizSidekick en lecture seule affichant mes boutiques et leurs produits récents. Si une connexion, une inscription ou l'onboarding BizSidekick est nécessaire, garde cette conversation ouverte, demande-moi de terminer dans le navigateur et de répondre `Continuer`, puis vérifie l'autorisation et démarre la tâche.
 ```
 
 Solution de repli avec la CLI :

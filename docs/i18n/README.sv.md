@@ -11,7 +11,7 @@ inga leverantörsuppgifter, handlaruppgifter, källkod för MCP-tjänsten eller 
 Klistra in följande text i en Codex-uppgift:
 
 ```text
-Använd Codex inbyggda plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera BizSidekick endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Återanvänd min befintliga inloggning. Om auktoriseringen slutförs utan kontokonfiguration ska du kontrollera anslutningen och automatiskt skapa och öppna exakt en ny BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här installationsuppgiften öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och skapa uppgiften.
+Använd Codex anpassade plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera BizSidekick endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Återanvänd min befintliga inloggning. Om auktoriseringen slutförs utan kontokonfiguration ska du kontrollera anslutningen och automatiskt skapa och öppna exakt en ny BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här installationsuppgiften öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och skapa uppgiften.
 ```
 
 CLI-alternativ:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Klistra in följande text i en Claude Code-session:
 
 ```text
-Använd Claude Codes inbyggda plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera `bizsidekick@bizsidekick` endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Behåll min befintliga inloggning och kör `/reload-plugins` exakt en gång efter en ny installation. Om auktoriseringen slutförs utan kontokonfiguration ska du fortsätta i den här sessionen och automatiskt starta en skrivskyddad BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här sessionen öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och starta uppgiften.
+Använd Claude Codes anpassade plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera `bizsidekick@bizsidekick` endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Behåll min befintliga inloggning och kör `/reload-plugins` exakt en gång efter en ny installation. Om auktoriseringen slutförs utan kontokonfiguration ska du fortsätta i den här sessionen och automatiskt starta en skrivskyddad BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här sessionen öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och starta uppgiften.
 ```
 
 CLI-alternativ:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Klistra in följande text i en WorkBuddy-konversation:
 
 ```text
-Använd WorkBuddys inbyggda plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera `bizsidekick@bizsidekick` endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Behåll min befintliga inloggning och kör `/reload-plugins` exakt en gång efter en ny installation. Om auktoriseringen slutförs utan kontokonfiguration ska du fortsätta i den här konversationen och automatiskt starta en skrivskyddad BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här konversationen öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och starta uppgiften.
+Använd WorkBuddys anpassade plugin-marknadsplats för att lägga till `BizSidekick-AI/bizsidekick` och installera `bizsidekick@bizsidekick` endast vid behov. Öppna eller läs inte arkivet i en webbläsare. Behåll min befintliga inloggning och kör `/reload-plugins` exakt en gång efter en ny installation. Om auktoriseringen slutförs utan kontokonfiguration ska du fortsätta i den här konversationen och automatiskt starta en skrivskyddad BizSidekick-uppgift som visar mina butiker och senaste produkter. Om inloggning, registrering eller BizSidekick-onboarding krävs, håll den här konversationen öppen, be mig slutföra i webbläsaren och svara `Fortsätt`, kontrollera sedan auktoriseringen och starta uppgiften.
 ```
 
 CLI-alternativ:

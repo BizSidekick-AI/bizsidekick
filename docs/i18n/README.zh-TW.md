@@ -11,7 +11,7 @@ BizSidekick 是供 Codex、Claude 與 WorkBuddy 使用的公開外掛市集。�
 將以下內容貼到 Codex 桌面版工作中：
 
 ```text
-使用 Codex 原生外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 BizSidekick；不要在瀏覽器中開啟或讀取儲存庫。優先沿用現有登入。如果授權不需要帳號設定即可完成，請驗證連線，並自動建立及開啟一個新的 BizSidekick Task，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前的安裝 Task，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並建立 Task。
+使用 Codex 自訂外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 BizSidekick；不要在瀏覽器中開啟或讀取儲存庫。優先沿用現有登入。如果授權不需要帳號設定即可完成，請驗證連線，並自動建立及開啟一個新的 BizSidekick Task，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前的安裝 Task，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並建立 Task。
 ```
 
 CLI 備用方式：
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 將以下內容貼到 Claude Code session：
 
 ```text
-使用 Claude Code 原生外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 `bizsidekick@bizsidekick`；不要在瀏覽器中開啟或讀取儲存庫。保留現有登入，新安裝後只執行一次 `/reload-plugins`。如果授權不需要帳號設定即可完成，請在目前 session 自動開始只讀 BizSidekick 任務，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前 session，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並開始任務。
+使用 Claude Code 自訂外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 `bizsidekick@bizsidekick`；不要在瀏覽器中開啟或讀取儲存庫。保留現有登入，新安裝後只執行一次 `/reload-plugins`。如果授權不需要帳號設定即可完成，請在目前 session 自動開始只讀 BizSidekick 任務，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前 session，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並開始任務。
 ```
 
 CLI 備用方式：
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 將以下內容貼到 WorkBuddy 桌面版對話：
 
 ```text
-使用 WorkBuddy 原生外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 `bizsidekick@bizsidekick`；不要在瀏覽器中開啟或讀取儲存庫。保留現有登入，新安裝後只執行一次 `/reload-plugins`。如果授權不需要帳號設定即可完成，請在目前對話自動開始只讀 BizSidekick 任務，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前對話，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並開始任務。
+使用 WorkBuddy 自訂外掛市集加入 `BizSidekick-AI/bizsidekick`，並只在需要時安裝 `bizsidekick@bizsidekick`；不要在瀏覽器中開啟或讀取儲存庫。保留現有登入，新安裝後只執行一次 `/reload-plugins`。如果授權不需要帳號設定即可完成，請在目前對話自動開始只讀 BizSidekick 任務，查詢我的商店和最近商品；如果需要登入、註冊或完成 BizSidekick onboarding，請保留目前對話，提示我在瀏覽器完成後回覆「可以繼續」，再驗證授權並開始任務。
 ```
 
 CLI 備用方式：

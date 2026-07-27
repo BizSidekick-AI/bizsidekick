@@ -11,7 +11,7 @@ kimlik bilgileri, satıcı verileri, MCP hizmeti kaynak kodu veya dağıtım giz
 Aşağıdaki metni bir Codex görevine yapıştırın:
 
 ```text
-Codex'in yerel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve BizSidekick'i yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu yeniden kullan. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bağlantıyı doğrula ve mağazalarımı ve son ürünleri gösteren yalnızca bir yeni BizSidekick görevini otomatik olarak oluşturup aç. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu yükleme görevini açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi oluştur.
+Codex'in özel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve BizSidekick'i yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu yeniden kullan. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bağlantıyı doğrula ve mağazalarımı ve son ürünleri gösteren yalnızca bir yeni BizSidekick görevini otomatik olarak oluşturup aç. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu yükleme görevini açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi oluştur.
 ```
 
 CLI alternatifi:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Aşağıdaki metni bir Claude Code oturumuna yapıştırın:
 
 ```text
-Claude Code'un yerel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve `bizsidekick@bizsidekick` eklentisini yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu koru ve yeni yüklemeden sonra `/reload-plugins` komutunu yalnızca bir kez çalıştır. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bu oturumda devam et ve mağazalarımı ve son ürünleri gösteren salt okunur bir BizSidekick görevini otomatik olarak başlat. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu oturumu açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi başlat.
+Claude Code'un özel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve `bizsidekick@bizsidekick` eklentisini yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu koru ve yeni yüklemeden sonra `/reload-plugins` komutunu yalnızca bir kez çalıştır. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bu oturumda devam et ve mağazalarımı ve son ürünleri gösteren salt okunur bir BizSidekick görevini otomatik olarak başlat. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu oturumu açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi başlat.
 ```
 
 CLI alternatifi:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Aşağıdaki metni bir WorkBuddy konuşmasına yapıştırın:
 
 ```text
-WorkBuddy'nin yerel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve `bizsidekick@bizsidekick` eklentisini yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu koru ve yeni yüklemeden sonra `/reload-plugins` komutunu yalnızca bir kez çalıştır. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bu konuşmada devam et ve mağazalarımı ve son ürünleri gösteren salt okunur bir BizSidekick görevini otomatik olarak başlat. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu konuşmayı açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi başlat.
+WorkBuddy'nin özel eklenti pazarını kullanarak `BizSidekick-AI/bizsidekick` kaynağını ekle ve `bizsidekick@bizsidekick` eklentisini yalnızca gerekiyorsa yükle. Depoyu tarayıcıda açma veya okuma. Mevcut oturumumu koru ve yeni yüklemeden sonra `/reload-plugins` komutunu yalnızca bir kez çalıştır. Yetkilendirme hesap kurulumu olmadan tamamlanırsa bu konuşmada devam et ve mağazalarımı ve son ürünleri gösteren salt okunur bir BizSidekick görevini otomatik olarak başlat. Oturum açma, kayıt veya BizSidekick onboarding gerekiyorsa bu konuşmayı açık tut, tarayıcıda tamamlayıp `Devam` yanıtını vermemi iste, ardından yetkilendirmeyi doğrula ve görevi başlat.
 ```
 
 CLI alternatifi:

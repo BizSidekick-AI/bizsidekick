@@ -29,7 +29,7 @@ credential or customer-identifier patterns.
 Paste this into a Codex desktop task:
 
 ```text
-Use Codex's native plugin marketplace to add `BizSidekick-AI/bizsidekick` and install BizSidekick if needed. Do not open or read the repository in a browser. Reuse my existing sign-in. If authorization completes without account setup, verify the connection and automatically create and open one new BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this installation task open, ask me to finish in the browser and reply `Continue`, then verify authorization and create the task.
+Use Codex's custom plugin marketplace to add `BizSidekick-AI/bizsidekick` and install BizSidekick if needed. Do not open or read the repository in a browser. Reuse my existing sign-in. If authorization completes without account setup, verify the connection and automatically create and open one new BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this installation task open, ask me to finish in the browser and reply `Continue`, then verify authorization and create the task.
 ```
 
 CLI fallback:
@@ -45,7 +45,7 @@ codex mcp login bizsidekick
 Paste this into a Claude Code session:
 
 ```text
-Use Claude Code's native plugin marketplace to add `BizSidekick-AI/bizsidekick` and install `bizsidekick@bizsidekick` if needed. Do not open or read the repository in a browser. Preserve my existing sign-in and run `/reload-plugins` once after a new install. If authorization completes without account setup, continue in this session and automatically start a read-only BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this session open, ask me to finish in the browser and reply `Continue`, then verify authorization and start the task.
+Use Claude Code's custom plugin marketplace to add `BizSidekick-AI/bizsidekick` and install `bizsidekick@bizsidekick` if needed. Do not open or read the repository in a browser. Preserve my existing sign-in and run `/reload-plugins` once after a new install. If authorization completes without account setup, continue in this session and automatically start a read-only BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this session open, ask me to finish in the browser and reply `Continue`, then verify authorization and start the task.
 ```
 
 CLI fallback:
@@ -60,7 +60,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Paste this into a WorkBuddy desktop conversation:
 
 ```text
-Use WorkBuddy's native plugin marketplace to add `BizSidekick-AI/bizsidekick` and install `bizsidekick@bizsidekick` if needed. Do not open or read the repository in a browser. Preserve my existing sign-in and run `/reload-plugins` once after a new install. If authorization completes without account setup, continue in this conversation and automatically start a read-only BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this conversation open, ask me to finish in the browser and reply `Continue`, then verify authorization and start the task.
+Use WorkBuddy's custom plugin marketplace to add `BizSidekick-AI/bizsidekick` and install `bizsidekick@bizsidekick` if needed. Do not open or read the repository in a browser. Preserve my existing sign-in and run `/reload-plugins` once after a new install. If authorization completes without account setup, continue in this conversation and automatically start a read-only BizSidekick task that shows my stores and recent products. If login, registration, or BizSidekick onboarding is required, keep this conversation open, ask me to finish in the browser and reply `Continue`, then verify authorization and start the task.
 ```
 
 CLI fallback:

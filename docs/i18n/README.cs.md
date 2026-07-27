@@ -11,7 +11,7 @@ poskytovatelů, data obchodníků, zdrojový kód služby MCP ani tajné údaje 
 Vložte následující text do úlohy v aplikaci Codex:
 
 ```text
-Použij nativní tržiště pluginů Codexu, přidej `BizSidekick-AI/bizsidekick` a nainstaluj BizSidekick, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení. Pokud autorizace proběhne bez nastavení účtu, ověř připojení a automaticky vytvoř a otevři jednu novou úlohu BizSidekick, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto instalační úlohu otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a vytvoř úlohu.
+Použij vlastní tržiště pluginů Codexu, přidej `BizSidekick-AI/bizsidekick` a nainstaluj BizSidekick, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení. Pokud autorizace proběhne bez nastavení účtu, ověř připojení a automaticky vytvoř a otevři jednu novou úlohu BizSidekick, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto instalační úlohu otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a vytvoř úlohu.
 ```
 
 Náhradní postup přes CLI:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Vložte následující text do relace Claude Code:
 
 ```text
-Použij nativní tržiště pluginů Claude Code, přidej `BizSidekick-AI/bizsidekick` a nainstaluj `bizsidekick@bizsidekick`, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení a po nové instalaci spusť `/reload-plugins` právě jednou. Pokud autorizace proběhne bez nastavení účtu, pokračuj v této relaci a automaticky spusť úlohu BizSidekick pouze pro čtení, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto relaci otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a spusť úlohu.
+Použij vlastní tržiště pluginů Claude Code, přidej `BizSidekick-AI/bizsidekick` a nainstaluj `bizsidekick@bizsidekick`, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení a po nové instalaci spusť `/reload-plugins` právě jednou. Pokud autorizace proběhne bez nastavení účtu, pokračuj v této relaci a automaticky spusť úlohu BizSidekick pouze pro čtení, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto relaci otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a spusť úlohu.
 ```
 
 Náhradní postup přes CLI:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Vložte následující text do konverzace v aplikaci WorkBuddy:
 
 ```text
-Použij nativní tržiště pluginů WorkBuddy, přidej `BizSidekick-AI/bizsidekick` a nainstaluj `bizsidekick@bizsidekick`, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení a po nové instalaci spusť `/reload-plugins` právě jednou. Pokud autorizace proběhne bez nastavení účtu, pokračuj v této konverzaci a automaticky spusť úlohu BizSidekick pouze pro čtení, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto konverzaci otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a spusť úlohu.
+Použij vlastní tržiště pluginů WorkBuddy, přidej `BizSidekick-AI/bizsidekick` a nainstaluj `bizsidekick@bizsidekick`, jen pokud je to potřeba. Neotevírej ani nečti repozitář v prohlížeči. Zachovej mé stávající přihlášení a po nové instalaci spusť `/reload-plugins` právě jednou. Pokud autorizace proběhne bez nastavení účtu, pokračuj v této konverzaci a automaticky spusť úlohu BizSidekick pouze pro čtení, která zobrazí mé obchody a nejnovější produkty. Pokud je nutné přihlášení, registrace nebo onboarding BizSidekick, ponech tuto konverzaci otevřenou, požádej mě o dokončení v prohlížeči a odpověď `Pokračovat`, poté ověř autorizaci a spusť úlohu.
 ```
 
 Náhradní postup přes CLI:

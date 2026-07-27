@@ -11,7 +11,7 @@ credenziali dei provider, dati dei commercianti, codice sorgente del servizio MC
 Incolla il testo seguente in un'attività di Codex desktop:
 
 ```text
-Usa il marketplace nativo dei plugin di Codex per aggiungere `BizSidekick-AI/bizsidekick` e installa BizSidekick solo se necessario. Non aprire né leggere il repository in un browser. Riutilizza il mio accesso esistente. Se l'autorizzazione si completa senza configurare un account, verifica la connessione e crea e apri automaticamente una sola nuova attività BizSidekick che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa attività di installazione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e crea l'attività.
+Usa il marketplace personalizzato dei plugin di Codex per aggiungere `BizSidekick-AI/bizsidekick` e installa BizSidekick solo se necessario. Non aprire né leggere il repository in un browser. Riutilizza il mio accesso esistente. Se l'autorizzazione si completa senza configurare un account, verifica la connessione e crea e apri automaticamente una sola nuova attività BizSidekick che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa attività di installazione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e crea l'attività.
 ```
 
 Alternativa tramite CLI:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Incolla il testo seguente in una sessione di Claude Code:
 
 ```text
-Usa il marketplace nativo dei plugin di Claude Code per aggiungere `BizSidekick-AI/bizsidekick` e installa `bizsidekick@bizsidekick` solo se necessario. Non aprire né leggere il repository in un browser. Mantieni il mio accesso esistente ed esegui `/reload-plugins` una sola volta dopo una nuova installazione. Se l'autorizzazione si completa senza configurare un account, continua in questa sessione e avvia automaticamente un'attività BizSidekick in sola lettura che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa sessione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e avvia l'attività.
+Usa il marketplace personalizzato dei plugin di Claude Code per aggiungere `BizSidekick-AI/bizsidekick` e installa `bizsidekick@bizsidekick` solo se necessario. Non aprire né leggere il repository in un browser. Mantieni il mio accesso esistente ed esegui `/reload-plugins` una sola volta dopo una nuova installazione. Se l'autorizzazione si completa senza configurare un account, continua in questa sessione e avvia automaticamente un'attività BizSidekick in sola lettura che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa sessione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e avvia l'attività.
 ```
 
 Alternativa tramite CLI:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Incolla il testo seguente in una conversazione di WorkBuddy:
 
 ```text
-Usa il marketplace nativo dei plugin di WorkBuddy per aggiungere `BizSidekick-AI/bizsidekick` e installa `bizsidekick@bizsidekick` solo se necessario. Non aprire né leggere il repository in un browser. Mantieni il mio accesso esistente ed esegui `/reload-plugins` una sola volta dopo una nuova installazione. Se l'autorizzazione si completa senza configurare un account, continua in questa conversazione e avvia automaticamente un'attività BizSidekick in sola lettura che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa conversazione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e avvia l'attività.
+Usa il marketplace personalizzato dei plugin di WorkBuddy per aggiungere `BizSidekick-AI/bizsidekick` e installa `bizsidekick@bizsidekick` solo se necessario. Non aprire né leggere il repository in un browser. Mantieni il mio accesso esistente ed esegui `/reload-plugins` una sola volta dopo una nuova installazione. Se l'autorizzazione si completa senza configurare un account, continua in questa conversazione e avvia automaticamente un'attività BizSidekick in sola lettura che mostri i miei negozi e i prodotti recenti. Se sono necessari accesso, registrazione o onboarding di BizSidekick, mantieni aperta questa conversazione, chiedimi di completare la procedura nel browser e rispondere `Continua`, quindi verifica l'autorizzazione e avvia l'attività.
 ```
 
 Alternativa tramite CLI:

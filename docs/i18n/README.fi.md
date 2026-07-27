@@ -11,7 +11,7 @@ ei sisällä palveluntarjoajien tunnuksia, kauppiastietoja, MCP-palvelun lähdek
 Liitä seuraava teksti Codex-tehtävään:
 
 ```text
-Lisää `BizSidekick-AI/bizsidekick` Codexin omasta plugin-markkinapaikasta ja asenna BizSidekick vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Käytä olemassa olevaa kirjautumistani. Jos valtuutus valmistuu ilman tilin määritystä, tarkista yhteys ja luo ja avaa automaattisesti yksi uusi BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä asennustehtävä avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja luo tehtävä.
+Lisää `BizSidekick-AI/bizsidekick` Codexin mukautetusta plugin-markkinapaikasta ja asenna BizSidekick vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Käytä olemassa olevaa kirjautumistani. Jos valtuutus valmistuu ilman tilin määritystä, tarkista yhteys ja luo ja avaa automaattisesti yksi uusi BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä asennustehtävä avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja luo tehtävä.
 ```
 
 CLI-vaihtoehto:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Liitä seuraava teksti Claude Code -istuntoon:
 
 ```text
-Lisää `BizSidekick-AI/bizsidekick` Claude Coden omasta plugin-markkinapaikasta ja asenna `bizsidekick@bizsidekick` vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Säilytä olemassa oleva kirjautumiseni ja suorita `/reload-plugins` täsmälleen kerran uuden asennuksen jälkeen. Jos valtuutus valmistuu ilman tilin määritystä, jatka tässä istunnossa ja käynnistä automaattisesti vain luku -tilassa oleva BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä istunto avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja käynnistä tehtävä.
+Lisää `BizSidekick-AI/bizsidekick` Claude Coden mukautetusta plugin-markkinapaikasta ja asenna `bizsidekick@bizsidekick` vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Säilytä olemassa oleva kirjautumiseni ja suorita `/reload-plugins` täsmälleen kerran uuden asennuksen jälkeen. Jos valtuutus valmistuu ilman tilin määritystä, jatka tässä istunnossa ja käynnistä automaattisesti vain luku -tilassa oleva BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä istunto avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja käynnistä tehtävä.
 ```
 
 CLI-vaihtoehto:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Liitä seuraava teksti WorkBuddy-keskusteluun:
 
 ```text
-Lisää `BizSidekick-AI/bizsidekick` WorkBuddyn omasta plugin-markkinapaikasta ja asenna `bizsidekick@bizsidekick` vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Säilytä olemassa oleva kirjautumiseni ja suorita `/reload-plugins` täsmälleen kerran uuden asennuksen jälkeen. Jos valtuutus valmistuu ilman tilin määritystä, jatka tässä keskustelussa ja käynnistä automaattisesti vain luku -tilassa oleva BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä keskustelu avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja käynnistä tehtävä.
+Lisää `BizSidekick-AI/bizsidekick` WorkBuddyn mukautetusta plugin-markkinapaikasta ja asenna `bizsidekick@bizsidekick` vain tarvittaessa. Älä avaa tai lue tietovarastoa selaimessa. Säilytä olemassa oleva kirjautumiseni ja suorita `/reload-plugins` täsmälleen kerran uuden asennuksen jälkeen. Jos valtuutus valmistuu ilman tilin määritystä, jatka tässä keskustelussa ja käynnistä automaattisesti vain luku -tilassa oleva BizSidekick-tehtävä, joka näyttää kauppani ja uusimmat tuotteet. Jos kirjautuminen, rekisteröinti tai BizSidekick-onboarding on tarpeen, pidä tämä keskustelu avoinna, pyydä minua viimeistelemään selaimessa ja vastaamaan `Jatka`, tarkista sitten valtuutus ja käynnistä tehtävä.
 ```
 
 CLI-vaihtoehto:

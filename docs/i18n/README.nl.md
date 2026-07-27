@@ -11,7 +11,7 @@ providerreferenties, winkelgegevens, broncode van de MCP-service of implementati
 Plak de volgende tekst in een Codex-taak:
 
 ```text
-Gebruik de ingebouwde pluginmarktplaats van Codex om `BizSidekick-AI/bizsidekick` toe te voegen en installeer BizSidekick alleen als dat nodig is. Open of lees de repository niet in een browser. Hergebruik mijn bestaande aanmelding. Als de autorisatie zonder accountconfiguratie wordt voltooid, controleer dan de verbinding en maak en open automatisch precies één nieuwe BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd deze installatietaak open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en maak de taak.
+Gebruik de aangepaste pluginmarktplaats van Codex om `BizSidekick-AI/bizsidekick` toe te voegen en installeer BizSidekick alleen als dat nodig is. Open of lees de repository niet in een browser. Hergebruik mijn bestaande aanmelding. Als de autorisatie zonder accountconfiguratie wordt voltooid, controleer dan de verbinding en maak en open automatisch precies één nieuwe BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd deze installatietaak open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en maak de taak.
 ```
 
 CLI-alternatief:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Plak de volgende tekst in een Claude Code-sessie:
 
 ```text
-Gebruik de ingebouwde pluginmarktplaats van Claude Code om `BizSidekick-AI/bizsidekick` toe te voegen en installeer `bizsidekick@bizsidekick` alleen als dat nodig is. Open of lees de repository niet in een browser. Behoud mijn bestaande aanmelding en voer `/reload-plugins` precies één keer uit na een nieuwe installatie. Als de autorisatie zonder accountconfiguratie wordt voltooid, ga dan door in deze sessie en start automatisch een alleen-lezen BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd deze sessie open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en start de taak.
+Gebruik de aangepaste pluginmarktplaats van Claude Code om `BizSidekick-AI/bizsidekick` toe te voegen en installeer `bizsidekick@bizsidekick` alleen als dat nodig is. Open of lees de repository niet in een browser. Behoud mijn bestaande aanmelding en voer `/reload-plugins` precies één keer uit na een nieuwe installatie. Als de autorisatie zonder accountconfiguratie wordt voltooid, ga dan door in deze sessie en start automatisch een alleen-lezen BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd deze sessie open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en start de taak.
 ```
 
 CLI-alternatief:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Plak de volgende tekst in een WorkBuddy-gesprek:
 
 ```text
-Gebruik de ingebouwde pluginmarktplaats van WorkBuddy om `BizSidekick-AI/bizsidekick` toe te voegen en installeer `bizsidekick@bizsidekick` alleen als dat nodig is. Open of lees de repository niet in een browser. Behoud mijn bestaande aanmelding en voer `/reload-plugins` precies één keer uit na een nieuwe installatie. Als de autorisatie zonder accountconfiguratie wordt voltooid, ga dan door in dit gesprek en start automatisch een alleen-lezen BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd dit gesprek open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en start de taak.
+Gebruik de aangepaste pluginmarktplaats van WorkBuddy om `BizSidekick-AI/bizsidekick` toe te voegen en installeer `bizsidekick@bizsidekick` alleen als dat nodig is. Open of lees de repository niet in een browser. Behoud mijn bestaande aanmelding en voer `/reload-plugins` precies één keer uit na een nieuwe installatie. Als de autorisatie zonder accountconfiguratie wordt voltooid, ga dan door in dit gesprek en start automatisch een alleen-lezen BizSidekick-taak die mijn winkels en recente producten toont. Als aanmelden, registreren of BizSidekick-onboarding nodig is, houd dit gesprek open, vraag me de stappen in de browser af te ronden en `Doorgaan` te antwoorden, controleer daarna de autorisatie en start de taak.
 ```
 
 CLI-alternatief:

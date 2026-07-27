@@ -11,7 +11,7 @@ Codex와 Claude에서 BizSidekick를 사용하기 위한 공개 플러그인 마
 다음 내용을 Codex 데스크톱 작업에 붙여 넣으세요.
 
 ```text
-Codex의 기본 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 BizSidekick을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 재사용해 주세요. 계정 설정 없이 인증이 완료되면 연결을 확인하고, 내 스토어와 최근 상품을 보여 주는 새 BizSidekick 작업을 하나만 자동으로 만들고 열어 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 설치 작업을 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 만들어 주세요.
+Codex의 사용자 지정 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 BizSidekick을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 재사용해 주세요. 계정 설정 없이 인증이 완료되면 연결을 확인하고, 내 스토어와 최근 상품을 보여 주는 새 BizSidekick 작업을 하나만 자동으로 만들고 열어 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 설치 작업을 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 만들어 주세요.
 ```
 
 CLI 대체 방법:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 다음 내용을 Claude Code 세션에 붙여 넣으세요.
 
 ```text
-Claude Code의 기본 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 `bizsidekick@bizsidekick`을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 유지하고 새로 설치한 뒤 `/reload-plugins`를 정확히 한 번 실행해 주세요. 계정 설정 없이 인증이 완료되면 이 세션에서 계속 진행하여 내 스토어와 최근 상품을 보여 주는 읽기 전용 BizSidekick 작업을 자동으로 시작해 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 세션을 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 시작해 주세요.
+Claude Code의 사용자 지정 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 `bizsidekick@bizsidekick`을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 유지하고 새로 설치한 뒤 `/reload-plugins`를 정확히 한 번 실행해 주세요. 계정 설정 없이 인증이 완료되면 이 세션에서 계속 진행하여 내 스토어와 최근 상품을 보여 주는 읽기 전용 BizSidekick 작업을 자동으로 시작해 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 세션을 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 시작해 주세요.
 ```
 
 CLI 대체 방법:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 다음 내용을 WorkBuddy 대화에 붙여 넣으세요.
 
 ```text
-WorkBuddy의 기본 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 `bizsidekick@bizsidekick`을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 유지하고 새로 설치한 뒤 `/reload-plugins`를 정확히 한 번 실행해 주세요. 계정 설정 없이 인증이 완료되면 이 대화에서 계속 진행하여 내 스토어와 최근 상품을 보여 주는 읽기 전용 BizSidekick 작업을 자동으로 시작해 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 대화를 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 시작해 주세요.
+WorkBuddy의 사용자 지정 플러그인 마켓플레이스에서 `BizSidekick-AI/bizsidekick`을 추가하고 필요한 경우에만 `bizsidekick@bizsidekick`을 설치해 주세요. 브라우저에서 저장소를 열거나 읽지 마세요. 기존 로그인을 유지하고 새로 설치한 뒤 `/reload-plugins`를 정확히 한 번 실행해 주세요. 계정 설정 없이 인증이 완료되면 이 대화에서 계속 진행하여 내 스토어와 최근 상품을 보여 주는 읽기 전용 BizSidekick 작업을 자동으로 시작해 주세요. 로그인, 가입 또는 BizSidekick 온보딩이 필요하면 이 대화를 열린 상태로 유지하고, 브라우저에서 완료한 뒤 `계속`이라고 답하도록 안내한 다음 인증을 확인하고 작업을 시작해 주세요.
 ```
 
 CLI 대체 방법:

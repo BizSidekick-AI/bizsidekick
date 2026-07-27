@@ -47,6 +47,71 @@ const expectedLocaleCodes = [
   "tr",
 ];
 
+const marketplaceWordingByLocale = {
+  en: { current: "custom plugin marketplace", legacy: "native plugin marketplace" },
+  "zh-CN": { current: "自定义插件市场", legacy: "原生插件市场" },
+  "zh-TW": { current: "自訂外掛市集", legacy: "原生外掛市集" },
+  cs: { current: "vlastní tržiště pluginů", legacy: "nativní tržiště pluginů" },
+  da: {
+    current: "brugerdefinerede plugin-markedsplads",
+    legacy: "indbyggede plugin-markedsplads",
+  },
+  nl: { current: "aangepaste pluginmarktplaats", legacy: "ingebouwde pluginmarktplaats" },
+  fi: {
+    current: "mukautetusta plugin-markkinapaikasta",
+    legacy: "omasta plugin-markkinapaikasta",
+  },
+  fr: {
+    current: "marketplace personnalisée de plugins",
+    legacy: "marketplace native de plugins",
+  },
+  de: {
+    current: "benutzerdefinierten Plugin-Marktplatz",
+    legacy: "nativen Plugin-Marktplatz",
+  },
+  it: {
+    current: "marketplace personalizzato dei plugin",
+    legacy: "marketplace nativo dei plugin",
+  },
+  ja: {
+    current: "カスタムプラグインマーケットプレイス",
+    legacy: "ネイティブプラグインマーケットプレイス",
+  },
+  ko: {
+    current: "사용자 지정 플러그인 마켓플레이스",
+    legacy: "기본 플러그인 마켓플레이스",
+  },
+  nb: {
+    current: "egendefinerte plugin-markedsplass",
+    legacy: "innebygde plugin-markedsplass",
+  },
+  pl: {
+    current: "niestandardowego marketplace pluginów",
+    legacy: "natywnego marketplace pluginów",
+  },
+  "pt-BR": {
+    current: "marketplace personalizado de plugins",
+    legacy: "marketplace nativo de plugins",
+  },
+  "pt-PT": {
+    current: "marketplace personalizado de plugins",
+    legacy: "marketplace nativo de plugins",
+  },
+  es: {
+    current: "marketplace personalizado de plugins",
+    legacy: "marketplace nativo de plugins",
+  },
+  sv: {
+    current: "anpassade plugin-marknadsplats",
+    legacy: "inbyggda plugin-marknadsplats",
+  },
+  th: {
+    current: "marketplace ปลั๊กอินแบบกำหนดเอง",
+    legacy: "marketplace ปลั๊กอินแบบเนทีฟ",
+  },
+  tr: { current: "özel eklenti pazarını", legacy: "yerel eklenti pazarını" },
+};
+
 const openAiLanguageSource =
   "https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt%3F.class";
 const shopifyLanguageSource = "https://help.shopify.com/en/manual/your-account/languages";
@@ -187,6 +252,7 @@ if (!rootReadme.includes("[Languages / 语言](docs/i18n/README.md)")) {
 for (const locale of localeRegistry.locales) {
   const relativePath = locale.code === localeRegistry.defaultLocale ? "README.md" : `docs/i18n/${locale.file}`;
   const content = readFileSync(join(root, relativePath), "utf8");
+  const marketplaceWording = marketplaceWordingByLocale[locale.code];
   if (!content.startsWith("# BizSidekick\n")) {
     fail(`${relativePath} must use the BizSidekick title`);
   }
@@ -203,6 +269,14 @@ for (const locale of localeRegistry.locales) {
     if (!content.includes(marker)) {
       fail(`${relativePath} must publish the current cross-client install marker ${JSON.stringify(marker)}`);
     }
+  }
+  assertEqual(
+    content.split(marketplaceWording.current).length - 1,
+    3,
+    `${relativePath} custom marketplace wording count`,
+  );
+  if (content.includes(marketplaceWording.legacy)) {
+    fail(`${relativePath} must not publish legacy native marketplace wording`);
   }
   if (/https:\/\/mcp\.bustly\.ai\/(?:chatgpt|workbuddy)\b/.test(content)) {
     fail(`${relativePath} must not route installation through the legacy hosted-guide prompt`);

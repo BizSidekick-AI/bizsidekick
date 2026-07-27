@@ -11,7 +11,7 @@ BizSidekick 面向 Codex、Claude 和 WorkBuddy 的公共插件市场。该插�
 将以下内容粘贴到 Codex 桌面版任务中：
 
 ```text
-使用 Codex 原生插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 BizSidekick；不要在浏览器中打开或阅读仓库。优先复用已有登录。如果授权无需账号设置即可完成，请验证连接，并自动创建和打开一个新的 BizSidekick Task，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前安装 Task，提示我在浏览器完成后回复“可以继续”，然后验证授权并创建 Task。
+使用 Codex 自定义插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 BizSidekick；不要在浏览器中打开或阅读仓库。优先复用已有登录。如果授权无需账号设置即可完成，请验证连接，并自动创建和打开一个新的 BizSidekick Task，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前安装 Task，提示我在浏览器完成后回复“可以继续”，然后验证授权并创建 Task。
 ```
 
 CLI 备用方式：
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 将以下内容粘贴到 Claude Code session 中：
 
 ```text
-使用 Claude Code 原生插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 `bizsidekick@bizsidekick`；不要在浏览器中打开或阅读仓库。保留已有登录，新安装后只执行一次 `/reload-plugins`。如果授权无需账号设置即可完成，请在当前 session 中自动开始一个只读 BizSidekick 任务，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前 session，提示我在浏览器完成后回复“可以继续”，然后验证授权并开始任务。
+使用 Claude Code 自定义插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 `bizsidekick@bizsidekick`；不要在浏览器中打开或阅读仓库。保留已有登录，新安装后只执行一次 `/reload-plugins`。如果授权无需账号设置即可完成，请在当前 session 中自动开始一个只读 BizSidekick 任务，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前 session，提示我在浏览器完成后回复“可以继续”，然后验证授权并开始任务。
 ```
 
 CLI 备用方式：
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 将以下内容粘贴到 WorkBuddy 桌面版对话中：
 
 ```text
-使用 WorkBuddy 原生插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 `bizsidekick@bizsidekick`；不要在浏览器中打开或阅读仓库。保留已有登录，新安装后只执行一次 `/reload-plugins`。如果授权无需账号设置即可完成，请在当前会话中自动开始一个只读 BizSidekick 任务，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前会话，提示我在浏览器完成后回复“可以继续”，然后验证授权并开始任务。
+使用 WorkBuddy 自定义插件市场添加 `BizSidekick-AI/bizsidekick`，并仅在需要时安装 `bizsidekick@bizsidekick`；不要在浏览器中打开或阅读仓库。保留已有登录，新安装后只执行一次 `/reload-plugins`。如果授权无需账号设置即可完成，请在当前会话中自动开始一个只读 BizSidekick 任务，查询我的店铺和最近商品；如果需要登录、注册或完成 BizSidekick onboarding，请保留当前会话，提示我在浏览器完成后回复“可以继续”，然后验证授权并开始任务。
 ```
 
 CLI 备用方式：

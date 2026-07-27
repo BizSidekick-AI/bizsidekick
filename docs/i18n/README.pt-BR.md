@@ -11,7 +11,7 @@ provedores, dados de lojistas, código-fonte do serviço MCP nem segredos de imp
 Cole o texto abaixo em uma tarefa do Codex para desktop:
 
 ```text
-Use o marketplace nativo de plugins do Codex para adicionar `BizSidekick-AI/bizsidekick` e instale o BizSidekick somente se necessário. Não abra nem leia o repositório em um navegador. Reutilize meu login existente. Se a autorização for concluída sem configuração de conta, verifique a conexão e crie e abra automaticamente uma única nova tarefa do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta tarefa de instalação aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e crie a tarefa.
+Use o marketplace personalizado de plugins do Codex para adicionar `BizSidekick-AI/bizsidekick` e instale o BizSidekick somente se necessário. Não abra nem leia o repositório em um navegador. Reutilize meu login existente. Se a autorização for concluída sem configuração de conta, verifique a conexão e crie e abra automaticamente uma única nova tarefa do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta tarefa de instalação aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e crie a tarefa.
 ```
 
 Alternativa pela CLI:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Cole o texto abaixo em uma sessão do Claude Code:
 
 ```text
-Use o marketplace nativo de plugins do Claude Code para adicionar `BizSidekick-AI/bizsidekick` e instale `bizsidekick@bizsidekick` somente se necessário. Não abra nem leia o repositório em um navegador. Preserve meu login existente e execute `/reload-plugins` exatamente uma vez após uma nova instalação. Se a autorização for concluída sem configuração de conta, continue nesta sessão e inicie automaticamente uma tarefa somente leitura do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta sessão aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e inicie a tarefa.
+Use o marketplace personalizado de plugins do Claude Code para adicionar `BizSidekick-AI/bizsidekick` e instale `bizsidekick@bizsidekick` somente se necessário. Não abra nem leia o repositório em um navegador. Preserve meu login existente e execute `/reload-plugins` exatamente uma vez após uma nova instalação. Se a autorização for concluída sem configuração de conta, continue nesta sessão e inicie automaticamente uma tarefa somente leitura do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta sessão aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e inicie a tarefa.
 ```
 
 Alternativa pela CLI:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Cole o texto abaixo em uma conversa do WorkBuddy:
 
 ```text
-Use o marketplace nativo de plugins do WorkBuddy para adicionar `BizSidekick-AI/bizsidekick` e instale `bizsidekick@bizsidekick` somente se necessário. Não abra nem leia o repositório em um navegador. Preserve meu login existente e execute `/reload-plugins` exatamente uma vez após uma nova instalação. Se a autorização for concluída sem configuração de conta, continue nesta conversa e inicie automaticamente uma tarefa somente leitura do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta conversa aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e inicie a tarefa.
+Use o marketplace personalizado de plugins do WorkBuddy para adicionar `BizSidekick-AI/bizsidekick` e instale `bizsidekick@bizsidekick` somente se necessário. Não abra nem leia o repositório em um navegador. Preserve meu login existente e execute `/reload-plugins` exatamente uma vez após uma nova instalação. Se a autorização for concluída sem configuração de conta, continue nesta conversa e inicie automaticamente uma tarefa somente leitura do BizSidekick que mostre minhas lojas e produtos recentes. Se for necessário fazer login, registrar-se ou concluir o onboarding do BizSidekick, mantenha esta conversa aberta, peça que eu termine no navegador e responda `Continuar`, depois verifique a autorização e inicie a tarefa.
 ```
 
 Alternativa pela CLI:

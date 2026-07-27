@@ -11,7 +11,7 @@ keine Anbieterzugangsdaten, Händlerdaten, Quellcodes des MCP-Dienstes oder Bere
 Füge den folgenden Text in eine Codex-Aufgabe ein:
 
 ```text
-Verwende den nativen Plugin-Marktplatz von Codex, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere BizSidekick nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Verwende meine bestehende Anmeldung weiter. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, prüfe die Verbindung und erstelle und öffne automatisch genau eine neue BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Installationsaufgabe geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und erstelle die Aufgabe.
+Verwende den benutzerdefinierten Plugin-Marktplatz von Codex, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere BizSidekick nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Verwende meine bestehende Anmeldung weiter. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, prüfe die Verbindung und erstelle und öffne automatisch genau eine neue BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Installationsaufgabe geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und erstelle die Aufgabe.
 ```
 
 CLI-Alternative:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Füge den folgenden Text in eine Claude-Code-Sitzung ein:
 
 ```text
-Verwende den nativen Plugin-Marktplatz von Claude Code, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere `bizsidekick@bizsidekick` nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Behalte meine bestehende Anmeldung bei und führe nach einer Neuinstallation `/reload-plugins` genau einmal aus. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, fahre in dieser Sitzung fort und starte automatisch eine schreibgeschützte BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Sitzung geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und starte die Aufgabe.
+Verwende den benutzerdefinierten Plugin-Marktplatz von Claude Code, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere `bizsidekick@bizsidekick` nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Behalte meine bestehende Anmeldung bei und führe nach einer Neuinstallation `/reload-plugins` genau einmal aus. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, fahre in dieser Sitzung fort und starte automatisch eine schreibgeschützte BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Sitzung geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und starte die Aufgabe.
 ```
 
 CLI-Alternative:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Füge den folgenden Text in eine WorkBuddy-Unterhaltung ein:
 
 ```text
-Verwende den nativen Plugin-Marktplatz von WorkBuddy, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere `bizsidekick@bizsidekick` nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Behalte meine bestehende Anmeldung bei und führe nach einer Neuinstallation `/reload-plugins` genau einmal aus. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, fahre in dieser Unterhaltung fort und starte automatisch eine schreibgeschützte BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Unterhaltung geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und starte die Aufgabe.
+Verwende den benutzerdefinierten Plugin-Marktplatz von WorkBuddy, um `BizSidekick-AI/bizsidekick` hinzuzufügen, und installiere `bizsidekick@bizsidekick` nur bei Bedarf. Öffne oder lies das Repository nicht im Browser. Behalte meine bestehende Anmeldung bei und führe nach einer Neuinstallation `/reload-plugins` genau einmal aus. Wenn die Autorisierung ohne Kontoeinrichtung abgeschlossen werden kann, fahre in dieser Unterhaltung fort und starte automatisch eine schreibgeschützte BizSidekick-Aufgabe, die meine Shops und neuesten Produkte zeigt. Wenn Anmeldung, Registrierung oder BizSidekick-Onboarding erforderlich ist, lasse diese Unterhaltung geöffnet, bitte mich, den Vorgang im Browser abzuschließen und mit `Weiter` zu antworten, prüfe danach die Autorisierung und starte die Aufgabe.
 ```
 
 CLI-Alternative:

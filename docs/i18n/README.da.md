@@ -11,7 +11,7 @@ ingen udbyderlegitimationsoplysninger, forhandlerdata, MCP-kildekode eller imple
 Indsæt følgende tekst i en Codex-opgave:
 
 ```text
-Brug Codex' indbyggede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun BizSidekick, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Genbrug mit eksisterende login. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du kontrollere forbindelsen og automatisk oprette og åbne én ny BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne installationsopgave åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og oprette opgaven.
+Brug Codex' brugerdefinerede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun BizSidekick, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Genbrug mit eksisterende login. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du kontrollere forbindelsen og automatisk oprette og åbne én ny BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne installationsopgave åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og oprette opgaven.
 ```
 
 CLI-alternativ:
@@ -27,7 +27,7 @@ codex mcp login bizsidekick
 Indsæt følgende tekst i en Claude Code-session:
 
 ```text
-Brug Claude Codes indbyggede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun `bizsidekick@bizsidekick`, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Bevar mit eksisterende login, og kør `/reload-plugins` præcis én gang efter en ny installation. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du fortsætte i denne session og automatisk starte en skrivebeskyttet BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne session åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og starte opgaven.
+Brug Claude Codes brugerdefinerede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun `bizsidekick@bizsidekick`, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Bevar mit eksisterende login, og kør `/reload-plugins` præcis én gang efter en ny installation. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du fortsætte i denne session og automatisk starte en skrivebeskyttet BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne session åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og starte opgaven.
 ```
 
 CLI-alternativ:
@@ -42,7 +42,7 @@ claude plugin install bizsidekick@bizsidekick --scope user
 Indsæt følgende tekst i en WorkBuddy-samtale:
 
 ```text
-Brug WorkBuddys indbyggede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun `bizsidekick@bizsidekick`, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Bevar mit eksisterende login, og kør `/reload-plugins` præcis én gang efter en ny installation. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du fortsætte i denne samtale og automatisk starte en skrivebeskyttet BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne samtale åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og starte opgaven.
+Brug WorkBuddys brugerdefinerede plugin-markedsplads til at tilføje `BizSidekick-AI/bizsidekick`, og installer kun `bizsidekick@bizsidekick`, hvis det er nødvendigt. Åbn eller læs ikke lageret i en browser. Bevar mit eksisterende login, og kør `/reload-plugins` præcis én gang efter en ny installation. Hvis godkendelsen kan gennemføres uden kontoopsætning, skal du fortsætte i denne samtale og automatisk starte en skrivebeskyttet BizSidekick-opgave, der viser mine butikker og seneste produkter. Hvis login, registrering eller BizSidekick-onboarding er nødvendig, skal du holde denne samtale åben, bede mig færdiggøre den i browseren og svare `Fortsæt`, derefter kontrollere godkendelsen og starte opgaven.
 ```
 
 CLI-alternativ:
