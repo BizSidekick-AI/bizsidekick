@@ -2,6 +2,8 @@
 
 [Languages / 语言](docs/i18n/README.md) · [简体中文](docs/i18n/README.zh-CN.md) · [繁體中文](docs/i18n/README.zh-TW.md) · [日本語](docs/i18n/README.ja.md) · [한국어](docs/i18n/README.ko.md)
 
+[BizSidekick official website](https://www.bizsidekick.app/)
+
 Public plugin marketplace for using BizSidekick from Codex, Claude, and WorkBuddy. It connects to a
 hosted MCP service; this repository contains no provider credentials, merchant data, service source
 code, or deployment secrets.
