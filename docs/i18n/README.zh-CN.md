@@ -3,7 +3,7 @@
 [全部支持语言](README.md) · [English](../../README.md)
 
 BizSidekick 面向 Codex、Claude 和 WorkBuddy 的公共插件市场。该插件连接到托管在
-`https://mcp.bustly.ai/mcp` 的 Bustly MCP 服务；本仓库不包含任何服务商凭据、
+`https://mcp.bizsidekick.app/mcp` 的 Bustly MCP 服务；本仓库不包含任何服务商凭据、
 商家数据、MCP 服务源代码或部署密钥。
 
 ## Codex 桌面版

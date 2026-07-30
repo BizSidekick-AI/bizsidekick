@@ -3,7 +3,7 @@
 [Wszystkie obsługiwane języki](README.md) · [English](../../README.md)
 
 Publiczny marketplace pluginu BizSidekick dla Codex, Claude i WorkBuddy. Plugin łączy się z hostowaną
-usługą Bustly MCP pod adresem `https://mcp.bustly.ai/mcp`. To repozytorium nie zawiera danych logowania
+usługą Bustly MCP pod adresem `https://mcp.bizsidekick.app/mcp`. To repozytorium nie zawiera danych logowania
 dostawców, danych sprzedawców, kodu źródłowego usługi MCP ani sekretów wdrożeniowych.
 
 ## Codex na komputer
