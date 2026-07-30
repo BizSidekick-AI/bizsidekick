@@ -1,6 +1,6 @@
 # BizSidekick
 
-[Languages / 语言](docs/i18n/README.md) · [简体中文](docs/i18n/README.zh-CN.md) · [繁體中文](docs/i18n/README.zh-TW.md) · [日本語](docs/i18n/README.ja.md) · [한국어](docs/i18n/README.ko.md)
+[English 🇺🇸](README.md) · [简体中文 🇨🇳](docs/i18n/README.zh-CN.md) · [Français 🇫🇷](docs/i18n/README.fr.md) · [Español 🇪🇸](docs/i18n/README.es.md) · [日本語 🇯🇵](docs/i18n/README.ja.md) · [한국어 🇰🇷](docs/i18n/README.ko.md) · [ไทย 🇹🇭](docs/i18n/README.th.md) · [More 🌐](docs/i18n/README.md)
 
 [BizSidekick official website](https://www.bizsidekick.app/)
 
