@@ -11,7 +11,7 @@
     {
       "name": "bizsidekick",
       "source": "./plugins/bustly",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "description": "Operate connected commerce stores and advertising systems safely through BizSidekick, powered by Bustly.",
       "author": {
         "name": "Bustly"

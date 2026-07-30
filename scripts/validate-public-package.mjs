@@ -192,7 +192,11 @@ assertEqual(
 );
 
 assertEqual(mcp?.mcpServers?.bizsidekick?.type, "http", "BizSidekick MCP transport");
-assertEqual(mcp?.mcpServers?.bizsidekick?.url, "https://mcp.bustly.ai/mcp", "BizSidekick MCP URL");
+assertEqual(
+  mcp?.mcpServers?.bizsidekick?.url,
+  "https://mcp.bizsidekick.app/mcp",
+  "BizSidekick MCP URL",
+);
 assertEqual(agentsMarketplace?.name, "bizsidekick", "Codex marketplace name");
 assertEqual(agentsMarketplace?.plugins?.[0]?.name, "bizsidekick", "Codex marketplace plugin name");
 assertEqual(
@@ -326,7 +330,7 @@ for (const [label, pattern] of forbiddenPatterns) {
   }
 }
 
-const allowedUrls = new Set(["https://bustly.ai", "https://mcp.bustly.ai/mcp"]);
+const allowedUrls = new Set(["https://bustly.ai", "https://mcp.bizsidekick.app/mcp"]);
 for (const match of publishedText.matchAll(/https:\/\/[^\s"')\],]+/g)) {
   if (!allowedUrls.has(match[0])) {
     fail(`public package contains an unapproved URL: ${match[0]}`);

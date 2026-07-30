@@ -3,7 +3,7 @@
 [Kaikki tuetut kielet](README.md) · [English](../../README.md)
 
 Julkinen plugin-markkinapaikka BizSidekickin käyttämiseen Codexissa, Claudessa ja WorkBuddyssa. Plugin
-yhdistää osoitteessa `https://mcp.bustly.ai/mcp` ylläpidettyyn Bustly MCP -palveluun. Tämä repositorio
+yhdistää osoitteessa `https://mcp.bizsidekick.app/mcp` ylläpidettyyn Bustly MCP -palveluun. Tämä repositorio
 ei sisällä palveluntarjoajien tunnuksia, kauppiastietoja, MCP-palvelun lähdekoodia tai julkaisuavaimia.
 
 ## Codex työpöydälle

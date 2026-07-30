@@ -3,7 +3,7 @@
 [Desteklenen tüm diller](README.md) · [English](../../README.md)
 
 BizSidekick'i Codex, Claude ve WorkBuddy ile kullanmak için herkese açık eklenti pazarı. Eklenti,
-`https://mcp.bustly.ai/mcp` adresinde barındırılan Bustly MCP hizmetine bağlanır. Bu depo sağlayıcı
+`https://mcp.bizsidekick.app/mcp` adresinde barındırılan Bustly MCP hizmetine bağlanır. Bu depo sağlayıcı
 kimlik bilgileri, satıcı verileri, MCP hizmeti kaynak kodu veya dağıtım gizli bilgileri içermez.
 
 ## Codex masaüstü

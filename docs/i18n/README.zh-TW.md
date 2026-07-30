@@ -3,7 +3,7 @@
 [所有支援語言](README.md) · [English](../../README.md)
 
 BizSidekick 是供 Codex、Claude 與 WorkBuddy 使用的公開外掛市集。外掛會連線至託管於
-`https://mcp.bustly.ai/mcp` 的 Bustly MCP 服務；本儲存庫不包含服務供應商憑證、
+`https://mcp.bizsidekick.app/mcp` 的 Bustly MCP 服務；本儲存庫不包含服務供應商憑證、
 商家資料、MCP 服務原始碼或部署機密。
 
 ## Codex 桌面版

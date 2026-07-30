@@ -3,7 +3,7 @@
 [対応言語一覧](README.md) · [English](../../README.md)
 
 BizSidekick を Codex と Claude から利用するための公開プラグインマーケットプレイスです。このプラグインは
-`https://mcp.bustly.ai/mcp` でホストされている Bustly MCP サービスに接続します。このリポジトリには、
+`https://mcp.bizsidekick.app/mcp` でホストされている Bustly MCP サービスに接続します。このリポジトリには、
 プロバイダーの認証情報、マーチャントデータ、MCP サービスのソースコード、デプロイ用シークレットは含まれていません。
 
 ## Codex デスクトップ
