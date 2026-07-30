@@ -249,8 +249,10 @@ assertEqual(
 
 const localeIndex = readFileSync(join(root, "docs", "i18n", "README.md"), "utf8");
 const rootReadme = readFileSync(join(root, "README.md"), "utf8");
-if (!rootReadme.includes("[Languages / 语言](docs/i18n/README.md)")) {
-  fail("README.md must link to the supported-language index");
+const featuredLanguageNavigation =
+  "[English 🇺🇸](README.md) · [简体中文 🇨🇳](docs/i18n/README.zh-CN.md) · [Français 🇫🇷](docs/i18n/README.fr.md) · [Español 🇪🇸](docs/i18n/README.es.md) · [日本語 🇯🇵](docs/i18n/README.ja.md) · [한국어 🇰🇷](docs/i18n/README.ko.md) · [ไทย 🇹🇭](docs/i18n/README.th.md) · [More 🌐](docs/i18n/README.md)";
+if (!rootReadme.includes(featuredLanguageNavigation)) {
+  fail("README.md must publish the ordered featured-language navigation");
 }
 
 for (const locale of localeRegistry.locales) {
