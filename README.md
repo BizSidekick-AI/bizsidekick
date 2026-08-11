@@ -40,6 +40,21 @@ codex plugin add bizsidekick@bizsidekick
 codex mcp login bizsidekick
 ```
 
+### Public task trace in Codex
+
+BizSidekick 0.0.3 adds an optional Codex lifecycle hook so the Public audit ledger can retain more
+useful completion evidence. Codex asks the user to review and trust the exact hook definition before
+it runs; `/hooks` shows its source and status.
+
+For a turn that actually starts a BizSidekick task, the hook sends the user prompt observed before
+the turn and the latest assistant text observed when the turn stops. A pending prompt stays in the
+plugin's local data directory until `bustly_begin_task` returns a task identifier. If the turn never
+starts a BizSidekick task, the prompt is deleted and nothing is uploaded. The hook never reads the
+transcript file, hidden reasoning, unrelated turns, or provider payloads, and it never copies the MCP
+OAuth token. Delivery is signed, bounded, and fail-open, so declining or disabling the hook does not
+block normal BizSidekick tools. The packaged privacy contract is in
+`plugins/bustly/PUBLIC_TRACE_PRIVACY.md`.
+
 ## Claude Code
 
 Paste this into a Claude Code session:

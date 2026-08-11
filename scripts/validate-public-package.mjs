@@ -12,7 +12,10 @@ const expectedPluginFiles = [
   ".codebuddy-plugin/plugin.json",
   ".codex-plugin/plugin.json",
   ".mcp.json",
+  "PUBLIC_TRACE_PRIVACY.md",
   "assets/bizsidekick-icon.svg",
+  "codex-hooks/public-trace.json",
+  "scripts/public-trace-hook.mjs",
   "skills/bustly-commerce-operator/SKILL.md",
   "skills/bustly-onboarding/SKILL.md",
   "skills/bustly-product-voice/SKILL.md",
@@ -164,6 +167,7 @@ const codex = readJson("plugins/bustly/.codex-plugin/plugin.json");
 const claude = readJson("plugins/bustly/.claude-plugin/plugin.json");
 const workbuddy = readJson("plugins/bustly/.codebuddy-plugin/plugin.json");
 const mcp = readJson("plugins/bustly/.mcp.json");
+const codexTraceHooks = readJson("plugins/bustly/codex-hooks/public-trace.json");
 const agentsMarketplace = readJson(".agents/plugins/marketplace.json");
 const claudeMarketplace = readJson(".claude-plugin/marketplace.json");
 const workbuddyMarketplace = readJson(".codebuddy-plugin/marketplace.json");
@@ -197,6 +201,36 @@ assertEqual(
   "https://mcp.bizsidekick.app/mcp",
   "BizSidekick MCP URL",
 );
+assertEqual(codex.hooks, "./codex-hooks/public-trace.json", "Codex trace hook manifest path");
+assertEqual(claude.hooks, undefined, "Claude trace hooks");
+assertEqual(workbuddy.hooks, undefined, "WorkBuddy trace hooks");
+assertEqual(
+  JSON.stringify(Object.keys(codexTraceHooks?.hooks ?? {})),
+  JSON.stringify(["UserPromptSubmit", "PreToolUse", "PostToolUse", "Stop"]),
+  "Codex trace lifecycle event inventory",
+);
+for (const event of ["PreToolUse", "PostToolUse"]) {
+  assertEqual(
+    codexTraceHooks.hooks[event]?.[0]?.matcher,
+    "^mcp__bizsidekick__bustly_begin_task$",
+    `${event} exact Public begin-task matcher`,
+  );
+}
+for (const event of ["UserPromptSubmit", "PreToolUse", "PostToolUse", "Stop"]) {
+  const handler = codexTraceHooks.hooks[event]?.[0]?.hooks?.[0];
+  assertEqual(handler?.type, "command", `${event} hook type`);
+  assertEqual(
+    handler?.command,
+    "node \"$PLUGIN_ROOT/scripts/public-trace-hook.mjs\"",
+    `${event} POSIX hook command`,
+  );
+  assertEqual(
+    handler?.commandWindows,
+    "node \"%PLUGIN_ROOT%\\scripts\\public-trace-hook.mjs\"",
+    `${event} Windows hook command`,
+  );
+  assertEqual(handler?.timeout, 3, `${event} bounded hook timeout`);
+}
 assertEqual(agentsMarketplace?.name, "bizsidekick", "Codex marketplace name");
 assertEqual(agentsMarketplace?.plugins?.[0]?.name, "bizsidekick", "Codex marketplace plugin name");
 assertEqual(
@@ -332,7 +366,19 @@ for (const [label, pattern] of forbiddenPatterns) {
   }
 }
 
-const allowedUrls = new Set(["https://bustly.ai", "https://mcp.bizsidekick.app/mcp"]);
+const traceHookSource = readFileSync(join(pluginRoot, "scripts", "public-trace-hook.mjs"), "utf8");
+if (traceHookSource.includes("transcript_path")) {
+  fail("Codex trace hook must not read or parse transcript_path");
+}
+if (!traceHookSource.includes("https://mcp.bizsidekick.app/public/trace/receipts")) {
+  fail("Codex trace hook must pin the Public trace receipt endpoint");
+}
+
+const allowedUrls = new Set([
+  "https://bustly.ai",
+  "https://mcp.bizsidekick.app/mcp",
+  "https://mcp.bizsidekick.app/public/trace/receipts",
+]);
 for (const match of publishedText.matchAll(/https:\/\/[^\s"')\],]+/g)) {
   if (!allowedUrls.has(match[0])) {
     fail(`public package contains an unapproved URL: ${match[0]}`);

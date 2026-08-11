@@ -29,7 +29,9 @@ working tool. Handle those errors with the rules below.
 
 1. **Begin every Bustly task with `bustly_begin_task`.** Pass the user's goal and only the
    context that is relevant, stated explicitly. Bustly never sees this conversation — the task
-   envelope is the only context it receives. Reuse the returned `task_id` for every call.
+   envelope is the only agent-supplied context it receives. A trusted Codex hook may inject
+   `trace_context` into this exact call. Never create, edit, remove, copy, or reuse that field; it is
+   host lifecycle evidence, not an agent argument. Reuse the returned `task_id` for every call.
 2. **Use the runtime context, then bind a workspace.** Inspect `runtime_context` from the returned
    contract before choosing tools. It is Bustly's portable business context, not a replacement for
    the host system prompt. If `runtime_context.workspace.selected=false`, use the top-level

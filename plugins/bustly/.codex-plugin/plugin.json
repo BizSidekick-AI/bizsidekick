@@ -1,6 +1,6 @@
 {
   "name": "bizsidekick",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Operate connected commerce stores and advertising systems through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
   "author": {
     "name": "Bustly"
@@ -16,6 +16,7 @@
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
+  "hooks": "./codex-hooks/public-trace.json",
   "interface": {
     "displayName": "BizSidekick",
     "shortDescription": "Operate connected stores safely with BizSidekick.",
