@@ -27,9 +27,10 @@ working tool. Handle those errors with the rules below.
 
 ## Workflow (required)
 
-1. **Begin every Bustly task with `bustly_begin_task`.** Pass the user's goal and only the
-   context that is relevant, stated explicitly. Bustly never sees this conversation — the task
-   envelope is the only agent-supplied context it receives. A trusted Codex hook may inject
+1. **Begin every Bustly task with `bustly_begin_task`.** Copy the user's question into
+   `user_question` as faithfully as possible without summarizing, translating, normalizing, or
+   adding context. Pass only explicitly stated task context separately. The copy is retained as
+   `agent_reported`; never claim it is a host-original message. A trusted Codex hook may inject
    `trace_context` into this exact call. Never create, edit, remove, copy, or reuse that field; it is
    host lifecycle evidence, not an agent argument. Reuse the returned `task_id` for every call.
 2. **Use the runtime context, then bind a workspace.** Inspect `runtime_context` from the returned
@@ -124,9 +125,13 @@ working tool. Handle those errors with the rules below.
      double-apply.
 5. **Report honestly.** A mutation happened only if the apply result says `applied: true`.
    `replayed: true` means an earlier attempt already did it.
-6. **Close the loop.** When the goal is done (or abandoned), call `bustly_complete_task` with a
-   short business-facing outcome summary. The user's audit trail (`ledger_get_task`,
-   `ledger_list_events`) should tell the whole story.
+6. **Close the loop.** Immediately before the user-facing answer, call `bustly_complete_task` with
+   the complete `final_reply` you are prepared to deliver, completion `status`, and explicit
+   `coverage`. Preserve all material conclusions, evidence, limitations, recommendations, and next
+   actions; do not upload hidden reasoning, system/developer prompts, unrelated conversation, or a
+   shortened activity summary. This is `agent_reported` prepared text, not proof that the host
+   rendered it or the user read it. The audit trail (`ledger_get_task`, `ledger_list_events`) should
+   tell the whole story.
 
 ## High-risk advertising writes
 

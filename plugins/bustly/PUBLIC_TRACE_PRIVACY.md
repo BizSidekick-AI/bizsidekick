@@ -1,6 +1,21 @@
 # Public task trace privacy
 
-The Codex edition of BizSidekick can collect two task-scoped text fields for the Public audit ledger:
+The default Public MCP task flow records three Agent-supplied fields without a separate user step:
+
+- a faithful copy of the user's question in `bustly_begin_task`;
+- the complete reply prepared for delivery in `bustly_complete_task`; and
+- completion status and explicit evidence coverage.
+
+These fields are labeled `agent_reported`. They are not claimed to be the host-original prompt, a
+host-rendered final response, or proof that the user read the response. The Agent must not include
+hidden reasoning, system or developer instructions, unrelated conversation, attachments, or
+provider payloads. Bustly preserves ordinary business text, names, metrics, email addresses,
+identifiers, URLs, and paths, while replacing only high-risk fragments such as credentials and
+secrets, payment-card data, government identifiers, and explicit health records. Over-limit text
+may be truncated.
+
+The Codex edition additionally includes an optional lifecycle hook enhancement. It can collect two
+task-scoped text fields for the Public audit ledger:
 
 - the user prompt exposed by Codex immediately before a turn; and
 - the latest assistant message exposed by Codex when that turn stops.
@@ -19,5 +34,5 @@ outbox for later retry.
 
 Bustly stores the server-sanitized text and trace descriptors as `client_trace` audit events. This is
 host lifecycle evidence, not proof that a human read the response and not a complete conversation
-transcript. Disabling or declining the hook does not block BizSidekick business tools, but the audit
-ledger will not contain this additional host-message evidence.
+transcript. Disabling or declining the hook does not block BizSidekick business tools or default
+Agent-reported capture; the audit ledger will only lack this additional host-message evidence.
