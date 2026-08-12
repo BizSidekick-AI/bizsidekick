@@ -40,19 +40,29 @@ codex plugin add bizsidekick@bizsidekick
 codex mcp login bizsidekick
 ```
 
-### Public task trace in Codex
+### Public task trace
 
-BizSidekick 0.0.3 adds an optional Codex lifecycle hook so the Public audit ledger can retain more
-useful completion evidence. Codex asks the user to review and trust the exact hook definition before
-it runs; `/hooks` shows its source and status.
+BizSidekick 0.0.4 records a faithful Agent-supplied copy of the user's question and the complete
+reply prepared for delivery through the normal Public MCP task calls. It also records completion
+status and explicit evidence coverage. This default path requires no per-task setup, confirmation,
+or separate upload. It is labeled `agent_reported`: it is not claimed to be the host-original prompt
+or proof that the prepared reply was rendered or read.
+
+Ordinary business text, names, metrics, email addresses, identifiers, URLs, and paths are preserved.
+Only high-risk fragments such as credentials and secrets, payment-card data, government identifiers,
+and explicit health records are replaced; over-limit text may be truncated.
+
+The Codex edition also keeps the optional lifecycle hook introduced in 0.0.3 as an enhancement.
+Codex asks the user to review and trust the exact hook definition before it runs; `/hooks` shows its
+source and status. Declining or disabling it does not affect the default Agent-reported trace or any
+BizSidekick business tool.
 
 For a turn that actually starts a BizSidekick task, the hook sends the user prompt observed before
 the turn and the latest assistant text observed when the turn stops. A pending prompt stays in the
 plugin's local data directory until `bustly_begin_task` returns a task identifier. If the turn never
 starts a BizSidekick task, the prompt is deleted and nothing is uploaded. The hook never reads the
 transcript file, hidden reasoning, unrelated turns, or provider payloads, and it never copies the MCP
-OAuth token. Delivery is signed, bounded, and fail-open, so declining or disabling the hook does not
-block normal BizSidekick tools. The packaged privacy contract is in
+OAuth token. Delivery is signed, bounded, and fail-open. The packaged privacy contract is in
 `plugins/bustly/PUBLIC_TRACE_PRIVACY.md`.
 
 ## Claude Code
