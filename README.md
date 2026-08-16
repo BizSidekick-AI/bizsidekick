@@ -17,7 +17,7 @@ one exact Meta campaign.
 
 Everything in this repository is intentionally public. Plugin Skills are distributable behavior
 contracts, not secrets or an authorization boundary. Authorization, mutation validation, native
-confirmation, idempotency, and audit enforcement remain server-side in Bustly.
+confirmation, idempotency, and audit enforcement remain server-side in BizSidekick.
 
 Published plugin files are limited to marketplace and plugin manifests, the production MCP endpoint,
 and the public Skills required by Codex, Claude, and WorkBuddy. Pull requests run a static package validator that
@@ -100,8 +100,8 @@ BizSidekick MCP entry and OAuth handoff; do not replace unrelated MCP entries.
 
 ## Security model
 
-- Google/Bustly login happens in browser OAuth. Workspace selection happens inside the business task.
-- A user-scoped OAuth grant is limited by current Bustly membership; a task binds exactly one Workspace.
+- Google/BizSidekick login happens in browser OAuth. Workspace selection happens inside the business task.
+- A user-scoped OAuth grant is limited by current BizSidekick membership; a task binds exactly one Workspace.
 - An unscoped store read covers every active, accessible connection in that Workspace and does not require confirmation.
 - Mutations are preview-first and require explicit approval before apply.
 - High-risk operations require typed confirmation.

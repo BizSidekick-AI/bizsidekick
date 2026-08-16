@@ -3,7 +3,7 @@
 [Všechny podporované jazyky](README.md) · [English](../../README.md)
 
 Veřejný marketplace pluginu BizSidekick pro Codex, Claude a WorkBuddy. Plugin se připojuje k hostované
-službě Bustly MCP na adrese `https://mcp.bizsidekick.app/mcp`. Tento repozitář neobsahuje přihlašovací údaje
+službě BizSidekick MCP na adrese `https://mcp.bizsidekick.app/mcp`. Tento repozitář neobsahuje přihlašovací údaje
 poskytovatelů, data obchodníků, zdrojový kód služby MCP ani tajné údaje pro nasazení.
 
 ## Codex pro počítače
@@ -54,8 +54,8 @@ codebuddy plugin install bizsidekick@bizsidekick --scope user
 
 ## Model zabezpečení
 
-- Přihlášení Google/Bustly probíhá v prohlížeči přes OAuth; pracovní prostor se vybírá v obchodní úloze.
-- Uživatelské oprávnění OAuth je omezeno aktuálním členstvím v Bustly; úloha je vázána právě na jeden pracovní prostor.
+- Přihlášení Google/BizSidekick probíhá v prohlížeči přes OAuth; pracovní prostor se vybírá v obchodní úloze.
+- Uživatelské oprávnění OAuth je omezeno aktuálním členstvím v BizSidekick; úloha je vázána právě na jeden pracovní prostor.
 - Čtení bez určení obchodu zahrnuje všechna aktivní a dostupná připojení v daném pracovním prostoru a nevyžaduje potvrzení.
 - Změny se nejprve zobrazí jako náhled a provedou se až po výslovném schválení.
 - Vysoce rizikové operace vyžadují zadání potvrzovacího textu.
