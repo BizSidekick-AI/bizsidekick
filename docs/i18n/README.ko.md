@@ -3,7 +3,7 @@
 [지원 언어 전체 보기](README.md) · [English](../../README.md)
 
 Codex와 Claude에서 BizSidekick를 사용하기 위한 공개 플러그인 마켓플레이스입니다. 이 플러그인은
-`https://mcp.bizsidekick.app/mcp`에서 호스팅되는 Bustly MCP 서비스에 연결됩니다. 이 저장소에는
+`https://mcp.bizsidekick.app/mcp`에서 호스팅되는 BizSidekick MCP 서비스에 연결됩니다. 이 저장소에는
 공급자 자격 증명, 판매자 데이터, MCP 서비스 소스 코드 또는 배포 비밀이 포함되어 있지 않습니다.
 
 ## Codex 데스크톱
@@ -54,8 +54,8 @@ codebuddy plugin install bizsidekick@bizsidekick --scope user
 
 ## 보안 모델
 
-- Google/Bustly 로그인은 브라우저 OAuth를 통해 진행됩니다. 워크스페이스는 비즈니스 작업 안에서 선택합니다.
-- 사용자 범위 OAuth 권한은 현재 Bustly 멤버십에 따라 제한되며, 하나의 작업은 정확히 하나의 워크스페이스에 연결됩니다.
+- Google/BizSidekick 로그인은 브라우저 OAuth를 통해 진행됩니다. 워크스페이스는 비즈니스 작업 안에서 선택합니다.
+- 사용자 범위 OAuth 권한은 현재 BizSidekick 멤버십에 따라 제한되며, 하나의 작업은 정확히 하나의 워크스페이스에 연결됩니다.
 - 스토어 범위를 지정하지 않은 읽기 작업은 해당 워크스페이스에서 활성 상태이며 액세스 가능한 모든 연결을 대상으로 하며 확인이 필요하지 않습니다.
 - 변경 작업은 먼저 미리 보기를 제공하며 명시적으로 승인한 후에만 적용됩니다.
 - 고위험 작업에는 지정된 확인 문구를 직접 입력해야 합니다.

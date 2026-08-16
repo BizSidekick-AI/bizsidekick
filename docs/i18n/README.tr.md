@@ -3,7 +3,7 @@
 [Desteklenen tüm diller](README.md) · [English](../../README.md)
 
 BizSidekick'i Codex, Claude ve WorkBuddy ile kullanmak için herkese açık eklenti pazarı. Eklenti,
-`https://mcp.bizsidekick.app/mcp` adresinde barındırılan Bustly MCP hizmetine bağlanır. Bu depo sağlayıcı
+`https://mcp.bizsidekick.app/mcp` adresinde barındırılan BizSidekick MCP hizmetine bağlanır. Bu depo sağlayıcı
 kimlik bilgileri, satıcı verileri, MCP hizmeti kaynak kodu veya dağıtım gizli bilgileri içermez.
 
 ## Codex masaüstü
@@ -54,8 +54,8 @@ codebuddy plugin install bizsidekick@bizsidekick --scope user
 
 ## Güvenlik modeli
 
-- Google/Bustly oturum açma işlemi tarayıcıda OAuth ile gerçekleşir; çalışma alanı iş görevinin içinde seçilir.
-- Kullanıcı kapsamlı OAuth izni mevcut Bustly üyeliğiyle sınırlıdır; bir görev tam olarak bir çalışma alanına bağlanır.
+- Google/BizSidekick oturum açma işlemi tarayıcıda OAuth ile gerçekleşir; çalışma alanı iş görevinin içinde seçilir.
+- Kullanıcı kapsamlı OAuth izni mevcut BizSidekick üyeliğiyle sınırlıdır; bir görev tam olarak bir çalışma alanına bağlanır.
 - Mağaza kapsamı belirtilmeyen okuma, çalışma alanındaki tüm etkin ve erişilebilir bağlantıları kapsar ve onay gerektirmez.
 - Değişiklikler önce önizlenir ve yalnızca açık onaydan sonra uygulanır.
 - Yüksek riskli işlemler yazılı bir onay gerektirir.

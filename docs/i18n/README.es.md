@@ -3,7 +3,7 @@
 [Todos los idiomas compatibles](README.md) · [English](../../README.md)
 
 Marketplace público del plugin BizSidekick para usarlo con Codex, Claude y WorkBuddy. El plugin se
-conecta al servicio Bustly MCP alojado en `https://mcp.bizsidekick.app/mcp`. Este repositorio no contiene
+conecta al servicio BizSidekick MCP alojado en `https://mcp.bizsidekick.app/mcp`. Este repositorio no contiene
 credenciales de proveedores, datos de comerciantes, código fuente del servicio MCP ni secretos de despliegue.
 
 ## Codex para escritorio
@@ -54,8 +54,8 @@ codebuddy plugin install bizsidekick@bizsidekick --scope user
 
 ## Modelo de seguridad
 
-- El inicio de sesión de Google/Bustly se realiza en el navegador mediante OAuth; el espacio de trabajo se selecciona dentro de la tarea empresarial.
-- Una autorización OAuth de usuario está limitada por la membresía actual de Bustly; cada tarea queda vinculada a un único espacio de trabajo.
+- El inicio de sesión de Google/BizSidekick se realiza en el navegador mediante OAuth; el espacio de trabajo se selecciona dentro de la tarea empresarial.
+- Una autorización OAuth de usuario está limitada por la membresía actual de BizSidekick; cada tarea queda vinculada a un único espacio de trabajo.
 - Una lectura sin limitar la tienda incluye todas las conexiones activas y accesibles de ese espacio y no requiere confirmación.
 - Los cambios muestran primero una vista previa y solo se aplican después de una aprobación explícita.
 - Las operaciones de alto riesgo requieren escribir una confirmación.
