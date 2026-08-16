@@ -1,11 +1,12 @@
 {
   "name": "bizsidekick",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Operate connected commerce stores and advertising systems through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
   "author": {
-    "name": "Bustly"
+    "name": "BizSidekick",
+    "url": "https://www.bizsidekick.app"
   },
-  "homepage": "https://bustly.ai",
+  "homepage": "https://www.bizsidekick.app",
   "keywords": [
     "commerce",
     "shopify",
@@ -21,14 +22,14 @@
     "displayName": "BizSidekick",
     "shortDescription": "Operate connected stores safely with BizSidekick.",
     "longDescription": "Read connected commerce, Klaviyo, advertising, GA4, and Search Console data; create governed draft Klaviyo Campaigns, send only to verified single-recipient test Segments, apply audited Shopify changes, and pause one exact Meta Campaign through persistent high-risk confirmation.",
-    "developerName": "Bustly",
+    "developerName": "BizSidekick",
     "category": "Productivity",
     "capabilities": [
       "Read",
       "Write",
       "Audit"
     ],
-    "websiteURL": "https://bustly.ai",
+    "websiteURL": "https://www.bizsidekick.app",
     "brandColor": "#000000",
     "composerIcon": "./assets/bizsidekick-icon.svg",
     "logo": "./assets/bizsidekick-icon.svg",

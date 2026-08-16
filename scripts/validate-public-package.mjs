@@ -375,7 +375,7 @@ if (!traceHookSource.includes("https://mcp.bizsidekick.app/public/trace/receipts
 }
 
 const allowedUrls = new Set([
-  "https://bustly.ai",
+  "https://www.bizsidekick.app",
   "https://mcp.bizsidekick.app/mcp",
   "https://mcp.bizsidekick.app/public/trace/receipts",
 ]);
