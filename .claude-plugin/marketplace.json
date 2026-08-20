@@ -9,7 +9,7 @@
     {
       "name": "bizsidekick",
       "source": "./plugins/bustly",
-      "description": "Operate connected commerce stores and advertising systems through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
+      "description": "Operate connected commerce stores, native Shopify reports, and Meta advertising exports through BizSidekick, powered by Bustly: authorized workspaces, Skills-backed reads, preview-before-apply mutations, and a full audit ledger.",
       "author": { "name": "BizSidekick", "url": "https://www.bizsidekick.app" },
       "homepage": "https://www.bizsidekick.app",
       "category": "productivity"

@@ -9,9 +9,11 @@ hosted MCP service; this repository contains no provider credentials, merchant d
 code, or deployment secrets.
 
 Current capabilities include multi-store commerce reads, privacy-minimized Shopify customer and
-order analysis, governed Shopify product and discount changes, governed Klaviyo draft campaigns
-and single-recipient test sends, advertising reads, and a high-risk confirmation flow for pausing
-one exact Meta campaign.
+order analysis, Shopify Admin report creation and provider-file export, governed Shopify product
+and discount changes, governed Klaviyo draft campaigns and single-recipient test sends, official
+Meta Marketing API report export, manual Meta Ads Manager saved-report configuration, advertising
+reads, and a high-risk confirmation flow for pausing one exact Meta campaign. BizSidekick never
+automates the Meta Ads Manager UI for report creation or export.
 
 ## Public package boundary
 

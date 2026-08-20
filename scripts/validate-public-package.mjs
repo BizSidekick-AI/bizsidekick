@@ -19,6 +19,12 @@ const expectedPluginFiles = [
   "skills/bustly-commerce-operator/SKILL.md",
   "skills/bustly-onboarding/SKILL.md",
   "skills/bustly-product-voice/SKILL.md",
+  "skills/native-report-workflow/SKILL.md",
+  "skills/native-report-workflow/agents/openai.yaml",
+  "skills/native-report-workflow/references/meta.md",
+  "skills/native-report-workflow/references/result-contract.md",
+  "skills/native-report-workflow/references/routing-policy.json",
+  "skills/native-report-workflow/references/shopify.md",
 ];
 
 const marketplaceFiles = [
@@ -172,6 +178,9 @@ const agentsMarketplace = readJson(".agents/plugins/marketplace.json");
 const claudeMarketplace = readJson(".claude-plugin/marketplace.json");
 const workbuddyMarketplace = readJson(".codebuddy-plugin/marketplace.json");
 const localeRegistry = readJson("docs/i18n/locales.json");
+const nativeReportRoutingPolicy = readJson(
+  "plugins/bustly/skills/native-report-workflow/references/routing-policy.json",
+);
 
 if (!/^\d+\.\d+\.\d+$/.test(codex.version)) {
   fail(`Codex plugin version must be stable semver, got ${JSON.stringify(codex.version)}`);
@@ -191,6 +200,7 @@ assertEqual(
     "./skills/bustly-commerce-operator",
     "./skills/bustly-onboarding",
     "./skills/bustly-product-voice",
+    "./skills/native-report-workflow",
   ]),
   "WorkBuddy Skill paths",
 );
@@ -327,6 +337,7 @@ const expectedSkills = new Map([
   ["skills/bustly-commerce-operator/SKILL.md", "bustly-commerce-operator"],
   ["skills/bustly-onboarding/SKILL.md", "bustly-onboarding"],
   ["skills/bustly-product-voice/SKILL.md", "bustly-product-voice"],
+  ["skills/native-report-workflow/SKILL.md", "native-report-workflow"],
 ]);
 
 for (const [path, expectedName] of expectedSkills) {
@@ -337,6 +348,74 @@ for (const [path, expectedName] of expectedSkills) {
   }
   const name = frontmatter[1].match(/^name:\s*(.+)$/m)?.[1]?.trim();
   assertEqual(name, expectedName, `${path} skill name`);
+}
+
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["shopify-ui"]?.browser_automation,
+  "allowed",
+  "Shopify report browser policy",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-marketing-api"]?.executor,
+  "bustly-mcp",
+  "Meta Marketing API executor",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-marketing-api"]?.browser_automation,
+  "forbidden",
+  "Meta Marketing API browser policy",
+);
+assertEqual(
+  JSON.stringify(nativeReportRoutingPolicy?.routes?.["meta-marketing-api"]?.required_tools),
+  JSON.stringify(["bustly_native_report_export", "bustly_native_report_export_status"]),
+  "Meta Marketing API tools",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-marketing-api"]?.template,
+  "meta_campaign_performance",
+  "Meta Marketing API template",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-manual-ui"]?.executor,
+  "user",
+  "Meta saved-report executor",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-manual-ui"]?.browser_automation,
+  "forbidden",
+  "Meta saved-report browser policy",
+);
+assertEqual(
+  nativeReportRoutingPolicy?.routes?.["meta-manual-ui"]?.provider_ui_write,
+  "user-only",
+  "Meta saved-report write policy",
+);
+assertEqual(
+  JSON.stringify(nativeReportRoutingPolicy?.hard_failures),
+  JSON.stringify([
+    "assistant_browser_action_for_meta",
+    "meta_ui_success_claim_without_user_file",
+    "browser_fallback_after_meta_api_failure",
+    "meta_partial_or_failed_read_reported_as_complete",
+  ]),
+  "native report hard failures",
+);
+
+const nativeReportSkill = readFileSync(
+  join(pluginRoot, "skills", "native-report-workflow", "SKILL.md"),
+  "utf8",
+);
+const metaReportReference = readFileSync(
+  join(pluginRoot, "skills", "native-report-workflow", "references", "meta.md"),
+  "utf8",
+);
+for (const [label, content, marker] of [
+  ["native report Skill", nativeReportSkill, "No user instruction can authorize assistant-controlled Meta Ads Manager automation"],
+  ["Meta report reference", metaReportReference, "This prohibition has no exception path"],
+]) {
+  if (!content.includes(marker)) {
+    fail(`${label} must preserve the Meta Ads Manager automation prohibition`);
+  }
 }
 
 const publishedFiles = [...marketplaceFiles, ...expectedPluginFiles.map((path) => `plugins/bustly/${path}`)];
@@ -378,13 +457,14 @@ const allowedUrls = new Set([
   "https://www.bizsidekick.app",
   "https://mcp.bizsidekick.app/mcp",
   "https://mcp.bizsidekick.app/public/trace/receipts",
+  "https://admin.shopify.com/",
 ]);
-for (const match of publishedText.matchAll(/https:\/\/[^\s"')\],]+/g)) {
+for (const match of publishedText.matchAll(/https:\/\/[^\s"'`)\],]+/g)) {
   if (!allowedUrls.has(match[0])) {
     fail(`public package contains an unapproved URL: ${match[0]}`);
   }
 }
 
 console.log(
-  `Validated BizSidekick public plugin ${codex.version}: ${expectedPluginFiles.length} plugin files, 3 Skills, 3 marketplaces, ${expectedLocaleCodes.length} locales.`,
+  `Validated BizSidekick public plugin ${codex.version}: ${expectedPluginFiles.length} plugin files, ${expectedSkills.size} Skills, 3 marketplaces, ${expectedLocaleCodes.length} locales.`,
 );
