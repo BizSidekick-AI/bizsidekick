@@ -1,4 +1,4 @@
 interface:
-  display_name: "Shopify 与 Meta 原生报告工作流"
+  display_name: "Shopify and Meta Native Report Workflow"
   short_description: "安全创建、导出并验证 Shopify 与 Meta 报告"
   default_prompt: "使用 $native-report-workflow 按安全路径创建或导出一份 Shopify 或 Meta 报告。"
